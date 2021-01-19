@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../public/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rely Digital Assessment</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script>
+
+    function popAlert() {
+      var email = document.getElementById("email").value;
+      var fullName = document.getElementById("fullName").value;
+      if (email === "" || fullName === "") {
+        Swal.fire({
+          title: 'Alert!',
+          text: "Name and Email cannot be blank!",
+          type: 'error',
+          icon: 'warning'
+        });
+      }
+    }
+
+  </script>
+</head>
+
+<body style="background-color: #484848;">
+
+  <div class="rely">
+
+    <form action="/" name="form1" id="form" method="POST" autocomplete="off">
+      <div class="heading"><b><br />We think you company would be a great fit!</b></div>
+      <div class="container">
+
+        <label class="label" style="padding-right: 270px; color: #484848;">Name</label><br />
+        <input id="fullName" type="text" class="form-control" name="fullName">
+        <br />
+        <label class="label" style="padding-right: 220px ; color: #484848;">Business Email</label><br />
+        <input id="email" type="email" class="form-control" name="email">
+
+      </div>
+
+      <button type="submit" onclick="popAlert()" class="button">Get Started Today</button>
+    </form>
+
+    <form action="/lists" method="GET">
+      <button class="buttonShow" type="submit" style="margin-top: 15px; width: 310px;">Show
+        Submissions</button>
+      <div id="myDropdown" class="dropdown-content">
+        {{#each list}}
+        <a class="sub">{{this.fullName}}, <u>{{this.email}}</u></a><br />
+        {{/each}}
+      </div>
+    </form>
+
+  </div>
+</body>
+
+</html>

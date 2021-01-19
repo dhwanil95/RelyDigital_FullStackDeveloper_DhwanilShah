@@ -1,0 +1,84 @@
+body, html{
+    font-family:'Poppins', sans-serif;
+}
+.container{
+    text-align: center;
+    padding: 16px;
+}
+
+.label{
+    color: grey;
+    font-size: 0.8em;
+}
+
+.heading{
+    text-align: center;
+    /* color: #484848; */
+}
+
+.button {
+    border: none;
+    color: white;
+    width: 310px;
+    height: 30px;
+    /* padding: 6px 90px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* font-size: 16px; */
+    font-family: Poppins;
+    /* margin-left: 140px; */
+    margin: 4px 145px;
+    cursor: pointer;
+    background-color: #484848;
+  }
+  
+.buttonShow{
+    border: none;
+    color: white;
+    width: 310px;
+    height: 30px;
+    /* padding: 6px 90px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* font-size: 16px; */
+    font-family: Poppins;
+    /* margin-left: 140px; */
+    margin: 4px 145px;
+    cursor: pointer;
+    background-color: #484848;
+} 
+
+.rely{
+    height: 600px;
+    width: 600px;
+    background: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
+}
+
+.sub{
+    margin-left: 140px;
+}
+
+#textArea{
+    margin-left: 145px;
+    height: 280px;
+    width: 310px;
+}
+
+input[type=text],[type=email]{
+    width: 53%;
+    height: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  
